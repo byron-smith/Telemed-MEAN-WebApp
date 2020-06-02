@@ -1,0 +1,33 @@
+<div style= text-align:center>
+  <h3>{{title}}</h3> <br/>
+
+  <form >
+      <mat-form-field >
+        <input matInput placeholder="First Name" id="firstName" [(ngModel)]=" firstName" name="firstname" required >
+      </mat-form-field><br/>
+  
+      <mat-form-field >
+        <input matInput placeholder="Last Name" id="lastname" [(ngModel)]=" lastName" name="lastname" required>
+      </mat-form-field><br/>
+    
+      <mat-form-field >
+          <input matInput placeholder="Enter email ID" id="email" [(ngModel)]=" email" name="email" required>
+        </mat-form-field><br/>
+  
+      <mat-form-field >
+        <input matInput placeholder="reason for visit" id="reason" [(ngModel)]=" reason" name="reason" required>
+      </mat-form-field><br/>
+    
+      <mat-form-field >
+        <input matInput placeholder="Doctor name" id="doctor" [(ngModel)]=" doctor" name="doctor" required>
+      </mat-form-field><br/>
+  
+      <mat-form-field >
+          <input matInput placeholder="date of visit(MM/DD/YYYY)" id="date" [(ngModel)]=" date" name="date" required>
+        </mat-form-field>
+    
+      <p>
+        <button (click)="onClick()">{{mode}}</button>
+      </p>
+    </form>
+  </div>

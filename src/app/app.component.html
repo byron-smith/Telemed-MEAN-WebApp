@@ -1,0 +1,103 @@
+<div class="image">
+  <img src="./assets/header_background.jpg" alt="header" width= "100%" height="250px" > 
+</div><br/>
+
+
+<ul class="nav nav-pills mb-3" id="myTab" role="tablist" >
+  <li class="nav-item">
+    <a
+      class="nav-link active"
+      [class.active]="viewModel == 'dashboard'"
+      routerLink="/dashboard"
+      (click)="viewModel = 'dashboard'">
+      Home</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'provider'"
+      routerLink="/provider"
+      (click)="viewModel = 'provider'">
+      Provider</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'providerlist'"
+      routerLink="/providerlist"
+      (click)="viewModel = 'providerlist'">
+      Provider List</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'appointment'"
+      routerLink="/appointment"
+      (click)="viewModel = 'appointment'">
+      Appointment</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'appointmentlist'"
+      routerLink="/appointmentlist"
+      (click)="viewModel = 'appointmentlist'">
+      Appointment List</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'inquiry'"
+      routerLink="/inquiry"
+      (click)="viewModel = 'inquiry'">
+      Patient Inquiry</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'inquirylist'"
+      routerLink="/inquirylist"
+      (click)="viewModel = 'inquirylist'">
+      Inquiry List</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link active"
+      [class.active]="viewModel == 'registration'"
+      routerLink="/registration"
+      (click)="viewModel = 'registration'">
+      Resources</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'students'"
+      routerLink="/students"
+      (click)="viewModel = 'students'">
+      Applicant List</a>
+  </li>
+
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [class.active]="viewModel == 'aboutus'"
+      routerLink="/aboutus"
+      (click)="viewModel = 'aboutus'">
+      About Us</a>
+  </li>
+
+</ul>
+
+<br/>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+

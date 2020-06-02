@@ -1,0 +1,24 @@
+p{
+    font-size: 20px;
+    font-family: "The New Roman";
+    color: gray;
+    text-align: center;
+
+}
+
+.example-card_dashboard {
+    width: 50px!important;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(226, 234, 240);
+  }
+  
+img{
+    height: 150px;
+    width: 150px;
+}
+
+.center {
+    flex: auto;
+    justify-content: center;
+}

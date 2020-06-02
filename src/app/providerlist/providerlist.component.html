@@ -1,0 +1,27 @@
+
+<h3>Provider List <br/></h3>
+
+<div>
+    <mat-list *ngFor="let provider of providerlist let i = index">
+      <mat-card class="example-card">
+      <mat-list-item>
+      <h4 matLine>Provider record: {{ provider._id }}<br/>
+      Name: {{ provider.firstName }}, {{ provider.lastName }}<br/>
+      Phone: {{ provider.phone }} <br />
+      Email: {{ provider.email }} <br />
+      <mat-card-actions align="end">
+      <button mat-raised-button color="warn" (click)="onDelete(provider._id)">
+      DELETE</button>
+  
+      <button
+      mat-raised-button
+      color="primary"
+      (click)="onUpdate(provider._id, provider.firstName, provider.lastName, provider.phone,provider.email)">
+      UPDATE</button>
+    </mat-card-actions>
+  </h4>
+            
+    </mat-list-item>
+  </mat-card>
+    </mat-list>
+  </div>

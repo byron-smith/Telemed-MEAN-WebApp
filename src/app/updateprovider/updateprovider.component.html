@@ -1,0 +1,25 @@
+<div style=  margin-left:40px>
+    <h3>Update Provider Form</h3><br/>
+
+    <form>
+      <mat-form-field >
+        <input matInput placeholder="First Name" id="firstname" [(ngModel)]=" firstName" name="firstname" required >
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput placeholder="Last Name" id="lastname" [(ngModel)]=" lastName" name="lastname" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput placeholder="Enter phone number" id="phone" [(ngModel)]=" phone" name="phone" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput placeholder="Enter email ID" id="email" [(ngModel)]=" email" name="email" >
+      </mat-form-field>
+      <p>
+        <button mat-raised-button color="primary" (click)="onUpdateClick()">Update</button>
+      </p>
+    </form>
+  </div>
+    

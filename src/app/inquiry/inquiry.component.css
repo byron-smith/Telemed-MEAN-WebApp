@@ -1,0 +1,18 @@
+mat-form-field{
+    width: 600px;
+    font-family: "The New Roman";
+}
+
+h3{
+    font-family: "The New Roman";
+    font-weight: bold;
+}
+
+button{
+    width: 600px;
+   
+    font-size: 20px;
+    font-weight: bold;
+    background:rgb(235, 229, 229);   
+    font-family: "The New Roman";
+}

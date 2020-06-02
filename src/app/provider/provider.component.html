@@ -1,0 +1,25 @@
+<div style= text-align:center ><br/>
+    <h3>{{title}}</h3><br/>
+
+    <form>
+      <mat-form-field >
+        <input matInput placeholder="First Name" id="firstname" [(ngModel)]=" firstName" name="firstname" required >
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput placeholder="Last Name" id="lastname" [(ngModel)]=" lastName" name="lastname" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput placeholder="Enter phone number" id="phone" [(ngModel)]=" phone" name="phone" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput placeholder="Enter email ID" id="email" [(ngModel)]=" email" name="email" >
+      </mat-form-field>
+      <p>
+        <button (click)="onClick()">{{mode}}</button>
+      </p>
+    </form>
+  </div>
+    

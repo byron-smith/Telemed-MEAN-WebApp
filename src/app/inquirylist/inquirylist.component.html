@@ -1,0 +1,28 @@
+
+<h3>Patient Inquiry List <br/></h3>
+
+<div>
+  <mat-list *ngFor="let inquiry of inquirylist let i = index">
+    <mat-card class="example-card">
+    <mat-list-item>
+    <h4 matLine>Inquiry record: {{ inquiry._id }}<br/>
+    Name: {{ inquiry.firstName }}, {{ inquiry.lastName }}<br/>
+    Inquiry: {{ inquiry.inquiry }} <br />
+    rx: {{ inquiry.rx }} <br />
+    <mat-card-actions align="end">
+    <button mat-raised-button color="warn" (click)="onDelete(inquiry._id)">
+    DELETE</button>
+
+    <button
+    mat-raised-button color="primary"
+    (click)="onUpdate(inquiry._id, inquiry.firstName, inquiry.lastName, inquiry.inquiry,inquiry.rx)">
+    UPDATE</button>
+    
+  </mat-card-actions>
+</h4>
+          
+  </mat-list-item>
+</mat-card>
+  </mat-list>
+</div>
+
